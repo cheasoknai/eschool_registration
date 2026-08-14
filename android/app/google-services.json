@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1044610999991",
+    "project_id": "eschoolregistration-a2c86",
+    "storage_bucket": "eschoolregistration-a2c86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044610999991:android:7f257d90359331ec6f0f32",
+        "android_client_info": {
+          "package_name": "com.example.eschool_registration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZGXSb91taSplkeb2bfsEZgvFNmJEAkeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044610999991:android:ca4b247fcd96bf3a6f0f32",
+        "android_client_info": {
+          "package_name": "com.example.eschoolregistration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZGXSb91taSplkeb2bfsEZgvFNmJEAkeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
