@@ -1,15 +1,21 @@
-name: Deploy Flutter Web to Vercel
+name: Build and Deploy Flutter Web
 
 on:
   push:
     branches:
-      - main # ឬ master អាស្រ័យលើ Branch របស់អ្នក
+      - main # ឬ master (អាស្រ័យលើឈ្មោះ Branch របស់អ្នក)
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "zulu"
+          java-version: "17"
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
