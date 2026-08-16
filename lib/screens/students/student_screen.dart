@@ -142,58 +142,58 @@ class _StudentScreenState extends State<StudentScreen> {
                 const SizedBox(width: 8),
 
                 // Class Filter Dropdown
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: const Color(0xFFE2E8F0)),
-                  ),
-                  child: DropdownButtonHideUnderline(
-                    child: DropdownButton<String>(
-                      value: _selectedClass,
-                      icon: const Icon(
-                        Icons.filter_list_rounded,
-                        color: Color(0xFF2563EB),
-                        size: 20,
-                      ),
-                      style: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF0F172A),
-                      ),
-                      onChanged: (String? newValue) {
-                        if (newValue != null) {
-                          setState(() {
-                            _selectedClass = newValue;
-                          });
-                        }
-                      },
-                      items:
-                          const [
-                            'All Classes',
-                            'Grade 1',
-                            'Grade 2',
-                            'Grade 3',
-                            'Grade 4',
-                            'Grade 5',
-                            'Grade 6',
-                            'Grade 7',
-                            'Grade 8',
-                            'Grade 9',
-                            'Grade 10',
-                            'Grade 11',
-                            'Grade 12',
-                            'General',
-                          ].map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(value),
-                            );
-                          }).toList(),
-                    ),
-                  ),
-                ),
+                // Container(
+                //   padding: const EdgeInsets.symmetric(horizontal: 10),
+                //   decoration: BoxDecoration(
+                //     color: Colors.white,
+                //     borderRadius: BorderRadius.circular(12),
+                //     border: Border.all(color: const Color(0xFFE2E8F0)),
+                //   ),
+                //   child: DropdownButtonHideUnderline(
+                //     child: DropdownButton<String>(
+                //       value: _selectedClass,
+                //       icon: const Icon(
+                //         Icons.filter_list_rounded,
+                //         color: Color(0xFF2563EB),
+                //         size: 20,
+                //       ),
+                //       style: const TextStyle(
+                //         fontSize: 13,
+                //         fontWeight: FontWeight.bold,
+                //         color: Color(0xFF0F172A),
+                //       ),
+                //       onChanged: (String? newValue) {
+                //         if (newValue != null) {
+                //           setState(() {
+                //             _selectedClass = newValue;
+                //           });
+                //         }
+                //       },
+                //       items:
+                //           const [
+                //             'All Classes',
+                //             'Grade 1',
+                //             'Grade 2',
+                //             'Grade 3',
+                //             'Grade 4',
+                //             'Grade 5',
+                //             'Grade 6',
+                //             'Grade 7',
+                //             'Grade 8',
+                //             'Grade 9',
+                //             'Grade 10',
+                //             'Grade 11',
+                //             'Grade 12',
+                //             'General',
+                //           ].map<DropdownMenuItem<String>>((String value) {
+                //             return DropdownMenuItem<String>(
+                //               value: value,
+                //               child: Text(value),
+                //             );
+                //           }).toList(),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
 
